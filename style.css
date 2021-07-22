@@ -83,7 +83,7 @@ a {
   }
   input,
   input:active {
-    background: #212121;
+    background: black;
     border-color: #fff;
     color: #fff;
   }
