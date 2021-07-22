@@ -31,12 +31,12 @@ const generatePDF = async (name) => {
   pdfDoc.registerFontkit(fontkit);
 
   //get font
-  const fontBytes = await fetch("./Sanchez-Regular.ttf").then((res) =>
+  const fontBytes = await fetch("./Amsterdam.otf").then((res) =>
     res.arrayBuffer()
   );
 
   // Embed our custom font in the document
-  const SanChezFont = await pdfDoc.embedFont(fontBytes);
+  const Amsterdam = await pdfDoc.embedFont(fontBytes);
 
   // Get the first page of the document
   const pages = pdfDoc.getPages();
@@ -47,7 +47,7 @@ const generatePDF = async (name) => {
     x: 350,
     y: 270,
     size: 58,
-    font: SanChezFont,
+    font: Amsterdam,
     color: rgb(0,0,0),
   });
 
