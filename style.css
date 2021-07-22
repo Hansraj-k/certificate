@@ -84,8 +84,8 @@ a {
   input,
   input:active {
     background: #212121;
-    border-color: #212121;
-    color: #212121;
+    border-color: #fff;
+    color: #fff;
   }
 
   /* for styling the autocomplete style */
