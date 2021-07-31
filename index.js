@@ -36,7 +36,7 @@ const generatePDF = async (name) => {
   );
 
   // Embed our custom font in the document
-  const Amsterdam = await pdfDoc.embedFont(fontBytes);
+  const Gagalin-Regular = await pdfDoc.embedFont(fontBytes);
 
   // Get the first page of the document
   const pages = pdfDoc.getPages();
@@ -47,7 +47,7 @@ const generatePDF = async (name) => {
     x: 350,
     y: 270,
     size: 28,
-    font: Amsterdam,
+    font: Gagalin-Regular,
     color: rgb(0,0,0),
   });
 
