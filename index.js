@@ -36,7 +36,7 @@ const generatePDF = async (name) => {
   );
 
   // Embed our custom font in the document
-  const Gagalin-Regular = await pdfDoc.embedFont(fontBytes);
+  const GagalinRegular = await pdfDoc.embedFont(fontBytes);
 
   // Get the first page of the document
   const pages = pdfDoc.getPages();
@@ -47,7 +47,7 @@ const generatePDF = async (name) => {
     x: 350,
     y: 270,
     size: 28,
-    font: Gagalin-Regular,
+    font: GagalinRegular,
     color: rgb(0,0,0),
   });
 
@@ -62,7 +62,7 @@ const generatePDF = async (name) => {
 
   var file = new File(
     [pdfBytes],
-    "Certificate.pdf",
+    "Hansraj Subscription Certificate.pdf",
     {
       type: "application/pdf;charset=utf-8",
     }
