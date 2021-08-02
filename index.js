@@ -31,7 +31,7 @@ const generatePDF = async (name) => {
   pdfDoc.registerFontkit(fontkit);
 
   //get font
-  const fontBytes = await fetch("./Amsterdam.otf").then((res) =>
+  const fontBytes = await fetch("./Gagalin-Regular.otf").then((res) =>
     res.arrayBuffer()
   );
 
