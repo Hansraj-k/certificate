@@ -3,6 +3,8 @@
 @font-face{
 	font-family: "ttufoabrac";
 	src:url('Amsterdam.otf');
+	font-family: "sc";
+	src:url('sanchez.ttf');
 }
 body {
   background: #212121;
@@ -32,7 +34,11 @@ img {
   border-radius: 150%;
   height: 120px;
 }
-
+h3 {
+	color: white;
+	font-size: 0.6em;
+	font-family: sc;
+}
 main {
   display: flex;
   flex-direction: column;
