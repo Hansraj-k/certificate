@@ -36,7 +36,7 @@ const generatePDF = async (name) => {
   );
 
   // Embed our custom font in the document
-  const GagalinRegular = await pdfDoc.embedFont(fontBytes);
+  const HC = await pdfDoc.embedFont(fontBytes);
 
   // Get the first page of the document
   const pages = pdfDoc.getPages();
@@ -47,8 +47,8 @@ const generatePDF = async (name) => {
     x: 390,
     y: 270,
     size: 28,
-    font: GagalinRegular,
-    text-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
+    font: HC,
+    text-shadow: 0 10px 30px 0 rgba(189,89,212,.5),
     color: rgb(0,0,0),
   });
 
