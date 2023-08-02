@@ -31,7 +31,7 @@ const generatePDF = async (name) => {
   pdfDoc.registerFontkit(fontkit);
 
   //get font
-  const fontBytes = await fetch("./Gagalin-Regular.otf").then((res) =>
+  const fontBytes = await fetch("./HC.otf").then((res) =>
     res.arrayBuffer()
   );
 
@@ -44,10 +44,11 @@ const generatePDF = async (name) => {
 
   // Draw a string of text diagonally across the first page
   firstPage.drawText(name, {
-    x: 401,
+    x: 390,
     y: 270,
     size: 28,
     font: GagalinRegular,
+    text-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
     color: rgb(0,0,0),
   });
 
