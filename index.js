@@ -31,12 +31,12 @@ const generatePDF = async (name) => {
   pdfDoc.registerFontkit(fontkit);
 
   //get font
-  const fontBytes = await fetch("./HC.otf").then((res) =>
+  const fontBytes = await fetch("./gagalinregular.otf").then((res) =>
     res.arrayBuffer()
   );
 
   // Embed our custom font in the document
-  const HC = await pdfDoc.embedFont(fontBytes);
+  const gagalinregular = await pdfDoc.embedFont(fontBytes);
 
   // Get the first page of the document
   const pages = pdfDoc.getPages();
@@ -47,7 +47,7 @@ const generatePDF = async (name) => {
     x: 390,
     y: 270,
     size: 28,
-    font: HC,
+    font: gagalinregular,
     color: rgb(0,0,0),
   });
 
