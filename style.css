@@ -4,6 +4,10 @@
 	font-family: "ttufoabrac";
 	src:url('Amsterdam.otf');
 }
+@font-face{
+	font-family: "ccc";
+	src:url('Sanchez-Regular.ttf');
+}
 body {
   background: #212121;
   font-family: system-ui;
@@ -35,7 +39,7 @@ img {
 h3 {
 	color: white;
 	font-size: 0.6em;
-	font-family: ttufoabrac;
+	font-family: ccc;
 }
 main {
   display: flex;
