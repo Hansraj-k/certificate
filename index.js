@@ -48,7 +48,7 @@ const generatePDF = async (name) => {
     y: 270,
     size: 28,
     font: HC,
-    textShadow: rgb(0, 23, 50),
+    textShadow: rgb(0, 24, 48),
     color: rgb(0,0,0),
   });
 
